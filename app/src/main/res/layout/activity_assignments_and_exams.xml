@@ -1,10 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AssignmentsAndExams">
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="87dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Assignment and exams"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView android:text="Task" android:padding="10dp"/>
+            <TextView android:text="Due Date" android:padding="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Open Source" android:padding="10dp"/>
+            <TextView android:text="06/06/2025"  android:padding="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="3D Multimidia" android:padding="10dp"/>
+            <TextView android:text="12/06/2025" android:padding="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="Programming" android:padding="10dp"/>
+            <TextView android:text="13/06/2025" android:padding="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add task" />
+
+</LinearLayout>
