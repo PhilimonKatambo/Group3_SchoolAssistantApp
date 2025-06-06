@@ -99,9 +99,11 @@
             android:layout_weight="1" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/classCard"
             android:layout_width="180dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:clickable="true"
             app:cardBackgroundColor="#fc6634"
             app:cardCornerRadius="10dp">
 
@@ -160,6 +162,7 @@
             android:layout_weight="1" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/assignmentCard"
             android:layout_width="180dp"
             android:layout_height="match_parent"
             app:cardBackgroundColor="#4836e1"
@@ -235,6 +238,7 @@
             android:layout_weight="1" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/campusCard"
             android:layout_width="391dp"
             android:layout_height="match_parent"
             app:cardBackgroundColor="#149f88"
@@ -319,21 +323,11 @@
                 android:layout_weight="1" />
 
             <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                app:srcCompat="@drawable/cottage_24px" />
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_weight="1"
+                android:clickable="true"
                 app:srcCompat="@drawable/settings_24px" />
 
             <Space

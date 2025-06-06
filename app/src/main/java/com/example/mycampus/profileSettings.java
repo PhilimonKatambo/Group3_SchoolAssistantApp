@@ -1,6 +1,8 @@
 package com.example.mycampus;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,12 @@ public class profileSettings extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button back = (Button) findViewById(R.id.button5);
+        back.setOnClickListener(v -> {
+                    Intent back1 = new Intent(profileSettings.this, MainActivity.class);
+                    startActivity(back1);
+                }
+        );
     }
 }
