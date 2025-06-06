@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.content.Intent;
+import android.widget.Button;
 
 public class class_schedule extends AppCompatActivity {
 
@@ -20,5 +22,13 @@ public class class_schedule extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button back = (Button) findViewById(R.id.button3);
+
+        back.setOnClickListener(v -> {
+                    Intent back1 = new Intent(class_schedule.this, MainActivity.class);
+                    startActivity(back1);
+        }
+        );
     }
 }
